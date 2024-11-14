@@ -22,7 +22,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:hint="Insira o seu email"
-        app:endIconMode="clear_text">
+        app:endIconMode="clear_text"
+        app:startIconContentDescription="email"
+        app:startIconDrawable="@drawable/baseline_person">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtEmail"
@@ -36,7 +38,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:hint="Insira a senha"
-        app:endIconMode="clear_text">
+        app:endIconMode="password_toggle"
+        app:startIconContentDescription="senha"
+        app:startIconDrawable="">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/txtSenha"
