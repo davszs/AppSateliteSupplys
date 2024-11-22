@@ -8,17 +8,16 @@
     android:orientation="vertical"
     tools:context=".PaginaInicialActivity">
 
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
         <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
-
-            <com.google.android.material.appbar.MaterialToolbar
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            >
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -28,6 +27,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom" />
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            style="@style/Widget.Material3.BottomAppBar"
+            app:navigationIcon="@drawable/baseline_menu"
+            app:title="Página Inicial"
+            app:titleCentered="true"
+            />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </LinearLayout>
